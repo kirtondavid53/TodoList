@@ -9,7 +9,7 @@ function getTodoListItems(items){
     str = ""
     console.log(items)
         if (items === null){
-            return;
+            return str;
         }
         for (let item of items){
         str +=  `<ul class="list-group list-group-horizontal rounded-0 bg-transparent">
@@ -149,8 +149,6 @@ console.log(items)
 
 // getTodoListItems(todoList)
 
-
-localStorage.clear();
 
 let delete_btn = document.querySelector('.listItem');
 
